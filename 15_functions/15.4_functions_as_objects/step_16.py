@@ -5,3 +5,4 @@
 numbers = sorted('111 14 88 7 4 123 90 45 12 171'.split(), key=int)
 
 print(*sorted(numbers, key=lambda x: sum(map(int, list(x)))))
+
