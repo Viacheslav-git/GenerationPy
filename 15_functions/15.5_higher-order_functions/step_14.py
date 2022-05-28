@@ -20,3 +20,4 @@ def func_apply(function, items):
 print(func_apply(mul7, [1, 2, 3, 4, 5, 6]))
 print(func_apply(add3, [1, 2, 3, 4, 5, 6]))
 print(func_apply(str, [1, 2, 3, 4, 5, 6]))
+
