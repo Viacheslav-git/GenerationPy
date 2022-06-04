@@ -2,4 +2,10 @@
 Числом назовем последовательность одной и более цифр, идущих подряд (число всегда неотрицательно).
 Напишите программу, которая вычисляет сумму всех чисел, записанных в файле."""
 
+with open('nums.txt') as f:
+    cont = f.read()
 
+for i in filter(lambda x: not x.isdigit(), cont):
+    cont = cont.replace(i, ' ')
+
+print(sum(map(int, cont.split())))
